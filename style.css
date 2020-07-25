@@ -1,0 +1,359 @@
+*/{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+/*-----------------font-----------------*/
+
+@font-face{
+    font-family: "IBMPlexSerif-Medium";
+    src: url(/fonts/IBMPlexSerif-Medium.ttf);
+}
+@font-face{
+    font-family: "IBMPlexSerif-Bold";
+    src: url(./fonts/IBMPlexSerif-Bold.ttf);
+}
+@font-face{
+    font-family: "IBMPlexSerif-SemiBold";
+    src: url(./fonts/IBMPlexSerif-SemiBold.ttf);
+}
+@font-face{
+    font-family: "BioRhyme-Bold";
+    src: url(./fonts/BioRhyme-Bold.ttf);
+}
+@font-face{
+    font-family: "BioRhyme-Light";
+    src: url(./fonts/BioRhyme-Light.ttf);
+}
+@font-face{
+    font-family: "BioRhyme-Regular";
+    src: url(./fonts/BioRhyme-Regular.ttf);
+}
+
+/*-----------------body-----------------*/
+
+h1{
+    font-family: "IBMplexserif-Bold";
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 80px;
+    color: #5e5e5e;
+}
+.header-animation{
+    animation: type 2s steps(30);
+    overflow: hidden;
+    white-space: normal;   
+    width: 120ch;
+}
+@keyframes type{
+    0%{
+        width: 0ch;
+    }
+}
+.alignment {
+    display: inline-block;
+    
+    margin: 0 auto;
+}
+h2{
+    font-family: "IBMPlexSerif-Bold";
+    font-weight: bolder;
+    font-size: 50px;
+    line-height: 60px;
+    color: #5e5e5e;
+}
+h4{
+    font-family: "BioRhyme-Bold";
+
+}
+p{
+    font-family: "BioRhyme-Light";
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: lighter;
+    color: #444141;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+/*-----------------NAV BER-----------------*/
+
+#header{
+    background-color: rgb(242, 220, 243);
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.nav-bar{
+    background-color: white;
+    display: flex;    
+    justify-content: center;
+
+}
+.header {
+    height: 100vh;
+    margin-top: 100px;
+}
+#verticle-line{
+    height: 3px;
+    margin: 0 auto;
+    width: 80%; 
+    background-color: #818181;   
+}
+/*--------how work---------*/
+
+.half-width {
+    text-align: center;
+    margin: 40px 0;   
+}
+.half-width-paragraph{
+    
+    text-align: left;
+    margin-top: 100px;
+      
+}
+
+/* --- step --- */
+.works-sec{
+    margin: 100px auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.step-box{
+    height: 380px;
+    width: 480px;          
+    align-content: left;
+}
+.step-box-text{
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 20px;
+    position: bottom;
+    float: left;
+    
+}
+.step4 {
+    text-align: center;
+    padding-top: -100px;
+    justify-content: center;
+}
+.step-box-text h4{
+    font-family: "BioRhyme-Bold";
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.img{
+    width: 45%;
+    height: 45%;
+    float: right;
+}
+
+/* --- offer section --- */
+
+
+.offer-text h3{
+    font-size: 40px;
+    font-weight: bold;
+    list-style: 20px;
+    color: #5e5e5e;
+    align-content: center;
+}
+.offer-text{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.item {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.item-text {
+    opacity: 0;
+}
+.item-text h3 {
+    color: #455a64;
+    font-family: "Biorhyme";
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.owl-item.active.center {
+    height: 290px;
+    width: 350;
+    border-radius: 10px;
+    
+    background-color: rgb(246, 212, 255);
+    opacity: 1;
+}
+.owl-item.active.center .item>.item-text {
+    opacity: 12;
+}
+.owl-prev, .owl-next {
+    position: absolute;
+    top: 35px;
+    background: rgb(196, 15, 15);
+}
+.owl-prev {
+    left: 0;
+}
+.owl-next {
+    right: 0px;
+}
+.owl-prev i,.owl-next i {
+    font-size: 30px;
+    color: #ffffff;
+    background: transparent;
+}
+.owl-prev,.owl-next {
+    background: transparent;
+}
+
+.owl-prev:hover,.owl-next:hover {
+    background: transparent;
+}
+
+.owl-dots {
+    display: none;
+}
+
+/* --- footer --- */
+
+.footer{
+    margin: auto 0;
+    background-color: beige;
+}
+.footer h5{
+    font-family: "BioRhyme-Regular";
+    font-weight: medium;
+    font-size: 24px;
+    color: rgb(58, 58, 58);
+
+}
+.footer-left{
+    margin-top: 50px;
+
+}
+.footer-logo{
+    height: 60px;
+    width: 125px;
+}
+.social i {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+.social i:hover {
+    background-color: #000000;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    border-radius: 50%;
+    transition: all ease 0.5s;
+}
+.social i:hover {
+    color: #ffef93;
+    transition: all ease 0.5s;
+}
+.footer-middle{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.footer-middle .para-margin p {
+    font-size: 15px;
+}
+.footer-right{
+    margin: 60px auto;
+    padding: 0 20px;
+}
+.cta{
+    position: relative;
+    margin-top: 60px;
+}
+.cta input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    font-size: 15px;
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+}
+.cta input::placeholder {
+    font-size: 15px;
+}
+.cta button {
+  position: absolute;
+  height: 40px;
+  border: 1px solid #0A8CFF;
+  color: #0A8CFF;
+  background: rgb(248, 245, 245);
+  padding: 20px;
+  padding: 0 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  top: 5px;
+  right: -10px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+.cta button:hover {
+    background-color: #0A8CFF;
+    transition: .5s;
+    color: #fff;
+}
+.footer p{
+    font-family: "BioRhyme-Light";
+    font-weight: lighter;
+    font-size: 16px;
+    padding-top: 50px;
+}
+        
+  /* --- fixed icon --- */
+
+.a-social-b {
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+}
+.a-social-b a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0px;
+    margin: 10px;
+    line-height: 0px;
+    background-color: #ffffff;
+    border: 1px solid #cbcbcb;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+
+.a-social-b i {
+    font-size: 30px;
+}
+.social-icons a:hover i,
+.a-social-b a:hover i{
+    color: #eba439;
+}
+.social-icons i,
+.a-social-b i {
+    color: #4939ff;
+}
+.social-icons a:hover,
+.a-social-b a:hover {
+    background-color: #000000;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    transition:  0.5s;
+}
